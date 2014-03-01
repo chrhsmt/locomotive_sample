@@ -19,7 +19,7 @@ test:
 production:
   sessions:
     default:
-      database: locomotive_production
+      # database: locomotive_production
       # heroku
       uri: <%= ENV['MONGOHQ_URL'] %>
       # hosts:
