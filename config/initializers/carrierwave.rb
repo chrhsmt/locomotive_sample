@@ -18,6 +18,8 @@ CarrierWave.configure do |config|
       region:                   ENV['S3_BUCKET_REGION']
     }
     config.fog_directory    = ENV['S3_BUCKET']
+    
+    Fog.credentials = { path_style: true }
 
   else
     # settings for the local filesystem
